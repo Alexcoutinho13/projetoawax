@@ -83,22 +83,20 @@ header {
 .banner .slide-area h4 {
     text-align: center;
 }
-.buttom {
-    background-color: #b98b59;
-    color: white;
-    border-radius: 24px;
-    margin: auto;
-    text-align: center;
-    margin-top: 15px;
-}
-.buttom a {
+.banner a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
     align-items: center;
+    padding: 15px 44px;
+    background-color: #b98b59;
+    border-radius: 24px;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
 }
-.buttom:hover {
+.banner a:hover {
     background-color: #e3aa6d;
-    color: #ccc;
+    color: #e7e4e4;
 }
