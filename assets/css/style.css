@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;;
 }
-
+body {
+    overflow-x: hidden;
+}
 header {
     height: 100px;
     background-color: black;
@@ -99,4 +101,35 @@ header {
 .banner a:hover {
     background-color: #e3aa6d;
     color: #e7e4e4;
+}
+.banner .sliders_pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .sliders_pointers .slide_point {
+    width: 15px;
+    height: 15px;
+    border: solid 2px #b98b59;
+    display: flex;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.banner .sliders_pointers .active {
+    background-color: #b98b59;
+}
+.default {
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.default .section_title, .default .section_desc {
+    text-align: center;
 }
