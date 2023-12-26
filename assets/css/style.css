@@ -9,6 +9,19 @@
 body {
     overflow-x: hidden;
 }
+body .buttom {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    align-items: center;
+    padding: 15px 44px;
+    background-color: #b98b59;
+    border-radius: 24px;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+}
 header {
     height: 100px;
     background-color: black;
@@ -127,9 +140,50 @@ header {
 }
 .default {
     background-color: red;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .default .section_title, .default .section_desc {
     text-align: center;
+}
+.default .section_title, .default .section_desc {
+    margin-bottom: 10px;
+}
+.default .section_body {
+    max-width: 1140px;
+    margin: auto;
+    height: 100px;
+}
+.default.light {
+    background-color: white;
+}
+.default.light h2 {
+    color: black;
+    font-size: 25px;
+}
+.default.light h4 {
+    color: #e7e4e4;
+    font-size: 12px;
+}
+.default .section_body {
+    display: flex;
+    justify-content: center;
+}
+.default .section_body .section_body_text {
+    background-color: white;
+    display: flex;
+    flex: 1;
+}
+.default .section_body .section_body_text a {
+    align-items: end;
+    display: flex;
+    justify-content: start;
+}
+.default .section_body .section_body_photo {
+    display: flex;
+    flex: 1;
+}
+.default .section_body .section_body_photo img {
+    width: 300px;
+    height: 180px;
 }
