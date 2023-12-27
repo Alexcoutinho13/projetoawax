@@ -21,6 +21,7 @@ body .buttom {
     margin: auto;
     text-align: center;
     margin-top: 15px;
+    width: 180px;
 }
 header {
     height: 100px;
@@ -139,15 +140,13 @@ header {
     background-color: #b98b59;
 }
 .default {
-    background-color: red;
     padding-top: 50px;
     padding-bottom: 50px;
+
 }
 .default .section_title, .default .section_desc {
     text-align: center;
-}
-.default .section_title, .default .section_desc {
-    margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 .default .section_body {
     max-width: 1140px;
@@ -156,13 +155,15 @@ header {
 }
 .default.light {
     background-color: white;
+    color: black;
+    margin-bottom: 40px;
 }
 .default.light h2 {
     color: black;
     font-size: 25px;
 }
-.default.light h4 {
-    color: #e7e4e4;
+.default h4 {
+    color: #ccc;
     font-size: 12px;
 }
 .default .section_body {
@@ -171,19 +172,39 @@ header {
 }
 .default .section_body .section_body_text {
     background-color: white;
-    display: flex;
-    flex: 1;
+    flex: 2;
+
+}
+.section_body .section_body_text p {
+    line-height: 25px;
 }
 .default .section_body .section_body_text a {
-    align-items: end;
-    display: flex;
     justify-content: start;
+}
+.default .section_body .section_body_text a:hover {
+    background-color: #e3aa6d;
 }
 .default .section_body .section_body_photo {
     display: flex;
     flex: 1;
+    justify-content: end;
 }
 .default .section_body .section_body_photo img {
-    width: 300px;
+    width: 350px;
     height: 180px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.563);
+}
+.default.dark {
+    background-color: black;
+    color: white;
+    margin-bottom: 40px;
+}
+.section_services {
+    display: flex;
+    width: 1140px;
+}
+.section_service {
+    display: flex;
+    width: 1140px;
+    height: 100px;
 }
