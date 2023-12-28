@@ -1,210 +1,141 @@
 @charset "UTF-08";
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 body {
-    overflow-x: hidden;
-}
-body .buttom {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-    align-items: center;
-    padding: 15px 44px;
-    background-color: #b98b59;
-    border-radius: 24px;
-    margin: auto;
-    text-align: center;
-    margin-top: 15px;
-    width: 180px;
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:13px;
+    overflow-x:hidden;
 }
 header {
-    height: 100px;
-    background-color: black;
-    color: white;
+    height:100px;
+    background-color:#000;
+    color:#FFF;
 }
 .header {
-    width: 1140px;
-    height: 100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width:1140px;
+    height:100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+.logo {
+    width:100px;
 }
 .logo img {
-    width: 65px;
+    width:65px;
+}
+.menu-opener {
+    display:none;
 }
 .menu {
-    font-weight: bold;
-    font-size: 13px;
+    flex:1;
+    display:flex;
+    justify-content: flex-end;
+}
+.menu ul,
+.menu li {
+    list-style:none;
 }
 .menu ul {
-    list-style: none;
-    align-items: center;
+    display:flex;
 }
-.menu li {
-    display: inline-block;
-    padding: 10px;
-}
-.menu a {
-    color: white;
+.menu li a {
+    color:#FFF;
+    text-transform: uppercase;
+    font-weight: 600;
     text-decoration: none;
-    display: flex;
-    border-bottom: 5px solid black;
-    height: 100px;
-    align-self: center;
-    align-items: center;
+    padding-left:10px;
+    padding-right:10px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    border-bottom:5px solid #000;
 }
-.menu a:hover, .menu .active a {
-    border-bottom: 5px solid #b98b59;
-    color: #ccc;
+.menu li a:hover,
+.menu .active a {
+    border-bottom:5px solid #B28756;
+    color:#CCC;
 }
+
+.button {
+    display:inline-block;
+    background-color:#B28756;
+    color:#FFF;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:600;
+    text-decoration: none;
+    padding:10px 30px;
+    margin-top:30px;
+    border-radius:20px;
+}
+.button--dark {
+    background-color:#000;
+}
+.button--dark:hover {
+    background-color:#B28756;
+}
+
 .banner {
-    background-color: #908d8d;
-    height: calc(100vh - 100px);
-    background-image: url(../images/bg.jpg);
-    background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
+    height:calc(100vh - 100px);
+    background-color:#333;
+    background-image:url('../images/bg.jpg');
+    background-size:cover;
+    background-position:bottom;
+    overflow:hidden;
 }
 .banner .sliders {
-    width: 1000vw;
-    height: 100%;
-    display: flex;
+    width:1000vw;
+    height:100%;
 }
 .banner .slide {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.711);
+    width:100vw;
+    height:100%;
+    display:inline-block;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.banner .slidearea {
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+    color:#FFF;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:50px;
+}
+.banner h1 span {
+    color:#B28756;
+}
+.banner h2 {
+    text-transform: uppercase;
+    margin-top:20px;
+}
+.banner .sliders-pointers {
+    width:100vw;
+    height:20px;
+    position:absolute;
+    margin-top:-50px;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
-.banner .slide-area {
-    color: white;
-    display: flex;
-    flex-direction: column;
+.banner .pointer {
+    width:15px;
+    height:15px;
+    border:2px solid #B28756;
+    border-radius:8px;
+    margin-left:5px;
+    margin-right:5px;
+    cursor:pointer;
 }
-.banner .slide-area h1 {
-    font-size: 52px;
-}
-.banner .slide-area h1 span {
-    color: #b98b59;
-}
-.banner .slide-area h4 {
-    text-align: center;
-}
-.banner a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-    align-items: center;
-    padding: 15px 44px;
-    background-color: #b98b59;
-    border-radius: 24px;
-    margin: auto;
-    text-align: center;
-    margin-top: 15px;
-}
-.banner a:hover {
-    background-color: #e3aa6d;
-    color: #e7e4e4;
-}
-.banner .sliders_pointers {
-    width: 100vw;
-    height: 20px;
-    position: absolute;
-    margin-top: -50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner .sliders_pointers .slide_point {
-    width: 15px;
-    height: 15px;
-    border: solid 2px #b98b59;
-    display: flex;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-.banner .sliders_pointers .active {
-    background-color: #b98b59;
-}
-.default {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-}
-.default .section_title, .default .section_desc {
-    text-align: center;
-    padding-bottom: 20px;
-}
-.default .section_body {
-    max-width: 1140px;
-    margin: auto;
-    height: 100px;
-}
-.default.light {
-    background-color: white;
-    color: black;
-    margin-bottom: 40px;
-}
-.default.light h2 {
-    color: black;
-    font-size: 25px;
-}
-.default h4 {
-    color: #ccc;
-    font-size: 12px;
-}
-.default .section_body {
-    display: flex;
-    justify-content: center;
-}
-.default .section_body .section_body_text {
-    background-color: white;
-    flex: 2;
-
-}
-.section_body .section_body_text p {
-    line-height: 25px;
-}
-.default .section_body .section_body_text a {
-    justify-content: start;
-}
-.default .section_body .section_body_text a:hover {
-    background-color: #e3aa6d;
-}
-.default .section_body .section_body_photo {
-    display: flex;
-    flex: 1;
-    justify-content: end;
-}
-.default .section_body .section_body_photo img {
-    width: 350px;
-    height: 180px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.563);
-}
-.default.dark {
-    background-color: black;
-    color: white;
-    margin-bottom: 40px;
-}
-.section_services {
-    display: flex;
-    width: 1140px;
-}
-.section_service {
-    display: flex;
-    width: 1140px;
-    height: 100px;
+.banner .pointer.active {
+    background-color:#B28756;
 }
