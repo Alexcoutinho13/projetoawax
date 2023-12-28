@@ -73,6 +73,11 @@ header {
     margin-top:30px;
     border-radius:20px;
 }
+.button:hover {
+    background-color:#c89861;
+    translate: -1px -1px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.667);
+}
 .button--dark {
     background-color:#000;
 }
@@ -138,4 +143,105 @@ header {
 }
 .banner .pointer.active {
     background-color:#B28756;
+}
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+}
+.default .section-body {
+    margin: auto;
+    width: 1140px;
+}
+.default .section-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+.default .section-desc {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.default.default.light {
+    background-color: #f7f7f7;
+}
+.default.light .section-title,
+.default.light .section-body {
+    color: black;
+}
+.default.dark {
+    background-color: black;
+}
+.default.dark .section-title,
+.default.dark .section-body {
+    color: white;
+}
+
+
+
+.default .section-aboutus {
+    display: flex;
+}
+.default .section-aboutus--left {
+    flex: 1;
+}
+.section-aboutus--left p {
+    font-size: 10px;
+    line-height: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+.default .section-aboutus--right {
+    width: 500px;
+}
+.default .section-aboutus--right img {
+    width: 400px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.705);
+}
+.default.dark .section-services {
+    display: flex;
+}
+.default.dark .section_service {
+    border-left: #818080 solid 1px;
+    flex: 1;
+}
+.default.dark .section_service:last-child {
+    border-right: #818080 solid 1px;
+}
+.default.dark .section-services h4 {
+    font-size: 12px;
+    margin-top: 16px;
+}
+.default.dark .section-services p {
+    font-size: 9px;
+    color: #CCC;
+    font-weight: lighter;
+    padding: 6px;
+    line-height: 18px;
+}
+.default .section-projects--filters li {
+    padding: 15px;
+    font-size: 13px;
+    font-weight: lighter;
+    border-left: solid 1px #c6c2c2;
+    cursor: pointer;
+    display: inline-block;
+}
+.default .section-projects--filters ul {
+    list-style: none;
+    background-color: #e5e2e2;
+    border-radius: 24px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid 1px #c6c2c2;
+}
+.default .section-projects--filters li:first-child {
+    border-left: none;
 }
