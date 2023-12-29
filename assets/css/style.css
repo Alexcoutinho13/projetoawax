@@ -232,6 +232,8 @@ header {
     border-left: solid 1px #c6c2c2;
     cursor: pointer;
     display: inline-block;
+    color: #555;
+    border-bottom: 3px solid #e5e2e2;;
 }
 .default .section-projects--filters ul {
     list-style: none;
@@ -244,4 +246,57 @@ header {
 }
 .default .section-projects--filters li:first-child {
     border-left: none;
+}
+.default .section-projects--filters ul .active,
+.default .section-projects--filters li:hover {
+    border-bottom: 3px solid #B28756;
+}
+.default.light .section-projects--photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100vw;
+    max-width: 1140px;
+}
+.default.light .section-projects--photo {
+    width: 280px;
+}
+.default.light .section-projects--photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.default.light .section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+.default.light .section-projects--photoinfo {
+    background-color: rgba(0, 0, 0, 0.585);
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    color: white;
+}
+.default.light .section-projects--photoinfo h6 {
+    font-size: 15px;
+    font-weight: bold;
+}
+.default.light .section-projects--photoinfo p {
+    font-size: 9px;
+    font-weight: lighter;
+}
+.section-projects--photoarea:hover .section-projects--photoinfo {
+    display: flex;
+}
+.default.dark.bg-team {
+    background: url(../images/bg\ team.webp);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
 }
