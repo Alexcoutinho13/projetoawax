@@ -471,24 +471,20 @@ footer {
 }
 .footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
     color: #CCC;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .footer .footer-left {
-    display: flex;
     flex: 1;
-    align-items: flex-start;
 }
 .footer .footer-left .copy {
-    align-self: flex-end;
-    justify-self: end;
+
+}
+.footer .footer-left .footer-social {
+    
 }
 .footer .footer-left .footer-social a {
-    margin: auto;
-    margin-left: 6px;
     background-color: #373737;
     border-radius: 50%;
     display: inline-flex;
