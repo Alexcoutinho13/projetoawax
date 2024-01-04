@@ -154,7 +154,8 @@ header {
     text-align: center;
     text-transform: uppercase;
 }
-.default .section-body {
+.default .section-body,
+footer .section-body {
     margin: auto;
     width: 1140px;
 }
@@ -403,4 +404,121 @@ header {
     font-size: 9px;
     color: #ccc;
     line-height: 20px;
+}
+.default.publi {
+    border-top: solid #ccc 1px;
+    border-bottom: solid #ccc 1px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.395);
+}
+.section-body .section-publi {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.section-price .section-price-products {
+    background-color: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 220px;
+    height: auto;
+    align-items: center;
+}
+.section-price .section-price-products a {
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    background-color: #373737;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-top: 5px;
+    border-radius: 24px;
+}
+.section-price-products .section-price-products-title {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.section-price-products .section-price-products-price {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+.section-price-products .section-price-products-price span {
+    font-size: 10px;
+    color: #ccc;
+    font-weight: normal;
+}
+.section-price-products .section-price-products-description li {
+    list-style: none;
+}
+.section-price-products .section-price-products-description {
+    font-size: 8px;
+    font-weight: lighter;
+}
+footer {
+    background-color: black;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CCC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer .footer-left {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+}
+.footer .footer-left .copy {
+    align-self: flex-end;
+    justify-self: end;
+}
+.footer .footer-left .footer-social a {
+    margin: auto;
+    margin-left: 6px;
+    background-color: #373737;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+.footer .footer-center {
+    display: flex;
+    flex: 1;
+    text-align: left;
+}
+.footer .footer-right {
+    display: flex;
+    flex: 1;
+    background-color: #373737;
+    border-radius: 3px;
+    justify-content: center;
+}
+.footer-right .footer-right-form {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer-right .footer-right-form input {
+    background-color: #373737;
+    border: none;
+    padding: 10px;
+    border-bottom: solid #ccc 2px;
+}
+.footer .footer-center p {
+    font-size: 10px;
 }
