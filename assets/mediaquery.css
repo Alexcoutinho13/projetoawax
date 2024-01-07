@@ -1,0 +1,71 @@
+@charset "UTF-08";
+@media (min-width:450px) and (max-width: 800px) {
+    nav {
+        position: absolute;
+        z-index: 99;
+        background-color: #000000e7;
+        width: 70vw;
+        height: calc(100vw - 100px);
+        top: 100px;
+        right: 0px;
+        display: none;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul li a {
+        height: 45px;
+        font-weight: bolder;
+        font-size: 15px;
+        border: none;
+        margin-left: 35px;
+    }
+   .menu li.active a,
+   .menu li a:hover{
+    border: none;
+    color: #B28756;
+}
+.menu-opener {
+    display: block;
+    margin-right: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+.logo {
+    margin-left: 30px;
+}
+.section-aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-aboutus .section-aboutus--right {
+    margin-top: 20px;
+}
+.section-aboutus .section-aboutus--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-services {
+    flex-wrap: wrap;
+}
+.section-service {
+    min-width: 50%;
+}
+.section-team {
+    max-width: 580px;
+}
+.section-price {
+    flex-wrap: wrap;
+}
+.section-price--item {
+    max-width: 300px;
+    margin-top: 20px;
+}
+.section-premium {
+    flex-wrap: wrap;
+}
+}
